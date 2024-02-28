@@ -19,14 +19,12 @@ while True:
         movie = input("Enter Name from 2 to 120: ")
         if len(movie) > 2:
             rating = input("Enter rating from 1 to 10: ")
-            if rating <= 10:
+            if rating < 10:
                 movies.append(movie + ", Rating: " + rating + "/10")
             else:
                 print("Invalid Input")
-                break
         else:
             print("Invalid Input")
-            break
     elif choice == '2':
         # https://www.w3schools.com/python/python_lists_sort.asp
         print(movies)
